@@ -12,6 +12,7 @@ You are an expert code reviewer. Analyze the provided code changes and provide d
 
 Follow this JSON format:
 ${outputFormat}
+The JSON you return should be parsable as-is. Do not wrap the JSON in any code block or other formatting. Do not ever use backticks as they will break the parsing. Your response is directly parsed and used, so ensure it is valid JSON.
 
 ------
 Understanding the diff:

@@ -29,7 +29,7 @@ export class AnthropicProvider implements AIProvider {
         },
         {
           role: 'user',
-          content: 'Return the response in JSON format only, no other text or comments. The JSON you return should be parsable. Do not wrap the JSON in any code block or other formatting. Do not ever use backticks as they will break the parsing.',
+          content: 'Return the response in JSON format only, no other text or comments. The JSON you return should be parsable as-is. Do not wrap the JSON in any code block or other formatting. Do not ever use backticks as they will break the parsing. Your response is directly parsed and used, so ensure it is valid JSON.',
         },
       ],
       temperature: this.config.temperature ?? 0.3,
